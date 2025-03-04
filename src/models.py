@@ -25,11 +25,15 @@ class BaseModel(nn.Module):
             
             if torch.cuda.is_available():
                 data = torch.load(self.gen_weights_path)
+                
             else: 
                 data = torch.load(self.gen_weights_path, map_location=lambda storage, loc: storage)
 
-            self.generator.load_state_dict(data['generator'])
+            self.generator.load_state_dict(data['generator'], strict=False)
             self.iteration = data['iteration']
+            
+            
+            
 
         # load discriminator only when training
         if self.config.MODE == 1 and os.path.exists(self.dis_weights_path):
@@ -203,7 +207,7 @@ class InpaintingModel(BaseModel):
         self.scaler.step(self.gen_optimizer)
         self.scaler.update()
         
-        # print(self.gen_scheduler.get_lr())
+        print(self.gen_scheduler.get_lr())
 
     def backward_joint(self, gen_loss = None, dis_loss = None):
         dis_loss.backward()

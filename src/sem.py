@@ -49,8 +49,8 @@ class sem():
 
         # test mode
         if self.config.MODE == 2:
-            if self.config.MODEL == 1:
-                print('model =! 1')
+            if self.config.MODEL == 2:
+                print('model = inpaint model')
                 self.test_dataset = Dataset(config, config.TEST_INPAINT_IMAGE_FLIST, config.TEST_MASK_FLIST,
                                             augment=False, training=False)
 
