@@ -8,7 +8,7 @@ Image inpainting aims to repair a partially damaged image based on the informati
 ## News
 - [x] Paper Download 
 - [x] Training Code
-- [ ] Pre-trained Models (coming soon)
+- [x] Pre-trained Models
 
 
 --------------------
