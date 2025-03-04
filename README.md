@@ -58,6 +58,18 @@ cd SEM-Net-main
 ```
 
 
+**Pre-trained model**
+--------------------
+We released the pre-trained model 
+[Google Drive](https://drive.google.com/drive/folders/1zlFqhm9JMYs4J0WaAHPSL_N1QkL8q479?usp=drive_link)
+
+
+For each pretrained model:
+
+[CelebA-HQ](https://drive.google.com/drive/folders/1L-Tt3mTgbJ_8Ki8jQIZE6xmddhHNl3YN?usp=drive_link)
+
+[Places2](https://drive.google.com/drive/folders/1sgJRu-Vf6u6taZY-RpY8cFXRAH09i4fu?usp=drive_link)
+
 
 **Getting Started**
 ----------------------
